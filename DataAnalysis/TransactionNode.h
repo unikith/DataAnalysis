@@ -7,7 +7,8 @@
 
 using std::cout;
 
-class TransactionNode : public Node
+class TransactionNode : public Node // a concrete class derived from Node to 
+								//insert into the BST and track units
 {
 public:
 	// constructor and destructor

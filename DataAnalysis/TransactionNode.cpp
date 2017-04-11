@@ -1,7 +1,8 @@
 #include "TransactionNode.h"
-
+// Member Functions
+// Public Functions
 // constructor and destructor
-TransactionNode::TransactionNode(const string & newData, const int & newUnits) : Node(newData);
+TransactionNode::TransactionNode(const string & newData, const int & newUnits) : Node(newData)
 {
 	this->mUnits = newUnits;
 }
@@ -26,5 +27,5 @@ int TransactionNode::getUnits() const
 // Node Functions
 void TransactionNode::printData()
 {
-	cout << this->mUnits;
+	cout << this->mData  << " : " << this->getUnits();
 }

@@ -43,5 +43,5 @@ Node *& Node::getLeft()
 
 Node *& Node::getRight()
 {
-	return this->getRight;
+	return this->mpRight;
 }

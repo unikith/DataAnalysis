@@ -5,7 +5,7 @@
 
 using std::string;
 
-class Node
+class Node // Node is an abstract class that can be used to define types of nodes for BSTs
 {
 public:
 	// constructor and destructor
