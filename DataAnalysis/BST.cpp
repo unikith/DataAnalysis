@@ -120,6 +120,6 @@ TransactionNode & BST::findLargest(Node *& pSubTree)
 	}
 	else
 	{
-		return findSmallest(pSubTree->getRight());
+		return findLargest(pSubTree->getRight());
 	}
 }
