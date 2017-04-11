@@ -7,10 +7,7 @@ TransactionNode::TransactionNode(const string & newData, const int & newUnits) :
 	this->mUnits = newUnits;
 }
 
-TransactionNode::~TransactionNode()
-{
-	
-}
+TransactionNode::~TransactionNode(){/*Empty*/}
 
 // setter
 void TransactionNode::setUnits(const int & newUnits)
@@ -25,7 +22,7 @@ int TransactionNode::getUnits() const
 }
 
 // Node Functions
-void TransactionNode::printData()
+void TransactionNode::printData() // prints out data to console note: does not add new line
 {
 	cout << this->mData  << " : " << this->getUnits();
 }

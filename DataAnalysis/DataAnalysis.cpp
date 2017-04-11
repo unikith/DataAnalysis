@@ -9,7 +9,7 @@ void DataAnalysis::runAnalysis()
 		readFile();
 		printTrends();
 		closeFile();
-	}
+	} // openedFile
 }
 
 // Private Functions
@@ -20,7 +20,7 @@ bool DataAnalysis::openFile()
 	if (mCsvStream.is_open())
 	{
 		success = true;
-	}
+	}//is_open()
 
 	return success;
 }
@@ -85,7 +85,7 @@ void DataAnalysis::insertData(const string & newData, const int & newUnits, cons
 	{
 		this->mTreeSold.insert(newData, newUnits);
 	}
-	else
+	else // excludes a line from a tree if lacks proper transaction field
 	{
 		cout << "Invalid file format for " << newData  << " will not be included in evaluation"<< endl;
 	}

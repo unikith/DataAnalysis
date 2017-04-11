@@ -47,7 +47,7 @@ TransactionNode & BST::findLargest()
 }
 
 // Private Functions
-// Helper functions
+// Helper functions  These are used to hide pointer information
 void BST::deleteTree(Node * pSubTree)
 {
 	if (pSubTree != nullptr)
